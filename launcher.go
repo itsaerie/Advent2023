@@ -48,6 +48,9 @@ func main() {
 		part2(file)
 	default:
 		part1(file)
+		file.Close()
+		// open input file, again, since ingest of file is greedy
+		file, _ = os.Open(os.Args[1] + ".txt")
 		part2(file)
 	}
 }
