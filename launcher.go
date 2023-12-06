@@ -47,6 +47,9 @@ func main() {
 	case "Five":
 		part1 = FiveOne
 		part2 = FiveTwo
+	case "Six":
+		part1 = SixOne
+		part2 = SixTwo
 	default:
 		part1 = partOne
 		part2 = partTwo
