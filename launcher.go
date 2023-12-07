@@ -24,7 +24,7 @@ func partTwo(file *os.File) {
 
 func main() {
 	// open input file
-	file, _ := os.Open(os.Args[1] + ".txt")
+	file, _ := os.Open("data/" + os.Args[1] + ".txt")
 	defer file.Close()
 
 	// arg parsing for which day to run; default to copy_paste
@@ -68,7 +68,7 @@ func main() {
 		part1(file)
 		file.Close()
 		// open input file, again, since ingest of file is greedy
-		file, _ = os.Open(os.Args[1] + ".txt")
+		file, _ = os.Open("data/" + os.Args[1] + ".txt")
 		part2(file)
 	}
 }
